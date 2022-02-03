@@ -71,7 +71,7 @@ router.post('/login', (req, res) => {
             res.status(404).json({ message: 'Password incorrect!' });
             return;
         }
-        res.json({ user: dbUserData, message: 'You are now logged in! '});
+        res.json({ user: dbUserData, message: 'You are now logged in!'});
     });
 });
 
