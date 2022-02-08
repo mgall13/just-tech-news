@@ -4,6 +4,10 @@ const apiRoutes = require('./api');
 
 const commentRoutes = require('./api/comment-routes');
 
+const homeRoutes = require('./home-routes');
+
+router.use('/', homeRoutes);
+
 router.use('/comments', commentRoutes);
 
 router.use('/api', apiRoutes);
